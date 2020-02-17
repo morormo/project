@@ -3,6 +3,18 @@ body {
   padding: 0;
   background: #f3f3f3;
   font-family: $main-font;
+  box-sizing: border-box;
+}
+
+/* Buttons */
+
+.btn-orange {
+  background-color: #f58220;
+  width: 41px;
+  height: 40px;
+  color: white;
+  border-radius: 3px;
+  border: 0px;
 }
 
 /* LEFT NAVIGATION */
@@ -25,14 +37,19 @@ body {
 
   .nav {
     border-bottom: 1px solid #b8b8b8;
+    padding-bottom: 12px;
 
     ul {
       padding: 0;
-      margin: 0 auto;
+      margin: 0;
       list-style-type: none;
       
       li {
         padding: 12px 36px;
+
+        i {
+          margin-right: 12px;
+        }
       
         &:hover {
           background-color: #282828;
@@ -47,7 +64,7 @@ body {
           color: #636363;
         }
       }
-      
+
       .active {
         background: #282828;
 
@@ -55,6 +72,31 @@ body {
           color: #b8b8b8;
         }
       }
+    }
+  }
+
+  .manager {
+    color: #636363;
+    text-align: center;
+
+    p {
+      font-weight: bold;
+      padding: 12px 0;
+    }
+  
+    .images { 
+      width: 40%;
+      float: left;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }
+
+    .menthor {
+      float: left;
     }
   }
 }
@@ -71,10 +113,89 @@ body {
   ul{ 
     width: 85%;
     text-align: right;
+    height: 100%;
 
     li {
       display: inline-block;
       list-style: none;
+      padding: 0 24px;
+      color: #9d9d9d;
+      border-left: 1px solid #E8E8E8;
+      height: 100%;
+      text-align: center;
+
+      &:nth-child(3) {
+        color: rgb(90, 151, 201);
+
+        i {
+          padding-right: 12px;
+        }
+      }
+
+      &:hover {
+        color: rgb(90, 151, 201);
+      }
+    }
+
+    .dolars {
+      font-weight: bold;
+
+      i {
+        padding: 0 12px;
+      }
     }
   }
+}
+
+/* MAIN SECTION */
+.main-box {
+  float: left;
+  margin: 17px;
+  background-color: #ffffff;
+  width : 83%;
+  height: 50%;
+
+  .title {
+    padding: 19px 0 19px 17px;
+    border-bottom: 2px solid #e3e3e3;
+  }
+
+  .date {
+    padding: 34px 0;
+    border-bottom: 2px solid #e3e3e3;
+
+    .date-check {
+      width: 325px;
+      height: 40px;
+      border-radius: 3px;
+      border: 1px solid #e3e3e3;
+      margin: 0 auto;
+      text-align: center;
+
+      .od {
+        float: left;
+        width: 50%;
+      }
+
+      .do {
+        float: left;
+        width: 49%;
+        border-left: 1px solid #e3e3e3;
+      }
+    }
+  }
+
+  .graph {
+    width: 100%;
+    padding-bottom: 55px;
+    
+    .subtitle {
+
+    }
+
+    .graph-img {
+      text-align: center;
+    }
+  }
+
 }
