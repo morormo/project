@@ -1,0 +1,152 @@
+/* Main Section */
+
+main {
+  position: absolute;
+  top: 60px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+
+  .container {
+    position: relative;
+    width: calc(100vw - 250px);
+    margin-top: 20px;
+    background-color: #fff;
+
+    h2 {
+      margin-left: 18px;
+      color: #a6a6a6;
+    }
+
+    .dateContainer {
+      display: flex;
+      align-items: center;
+      width: 460px;
+      margin: 40px auto;
+
+      .smallDateContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 90%;
+        height: 40px;
+        margin: 50px auto;
+        border: 1px solid #e3e3e3;
+        border-radius: 5px;
+      }
+    }
+
+    .wrapper{
+      width: 1000px;
+      margin: auto;
+      
+      canvas {
+        margin-bottom: 55px;
+      }
+
+      .dataContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 50px auto;
+
+        .data {
+          display: flex;
+          justify-content: space-between;
+          width: 46%;
+          border-bottom: 1px solid #e3e3e3;
+
+          p {
+            &:first-of-type {
+              font-weight: bold;
+              color: #a6a6a6;
+            }
+
+            &:last-of-type {
+              color: #333333;
+            }
+          }
+        }
+      }
+
+      h3{
+        margin: 55px 0;
+        color: #a6a6a6;
+      }
+    }
+  }
+}
+
+
+@media (max-width: 1260px) {
+  main .container .wrapper{
+    width: 800px;
+  }
+}
+
+@media (max-width: 1260px) and (orientation: landscape) {
+  main .container {
+    width: calc(100vw - 225px);
+  }
+}
+
+@media (max-width: 1060px){
+  main .container {
+    width: calc(100vw - 245px);
+
+    .wrapper{
+      width: 600px;
+    }
+  }
+}
+
+@media (max-width: 860px){
+  main .container {
+    width: calc(100vw - 30px);
+    margin: 0 auto;
+
+    .wrapper {
+      width: 500px;
+    }
+  }
+}
+
+@media (max-width: 640px){
+  main .container {
+    margin-top: 15px;
+
+    .dateContainer {
+      flex-direction: column;
+      width: 80%;
+
+      .smallDateContainer{
+        flex-direction: column;
+        height: 100px;
+        width: 80%;
+
+        .verticalLine {
+          display: none;
+        }
+      }
+    }
+
+    .wrapper{
+      width: 80%;
+
+      .dataContainer {
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 25px auto;
+
+        .data {
+          width: 90%;
+        }
+      }
+
+      canvas {
+        width: 80%;
+      }
+    }
+  }
+}

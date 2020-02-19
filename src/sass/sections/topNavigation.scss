@@ -1,0 +1,58 @@
+/* TOP NAVIGATION */
+
+.top-nav {
+  background-color: #fff;
+  width: 100vw;
+  float: right;
+  padding: 0;
+  margin: 0;
+
+  ul{ 
+    width: 85%;
+    text-align: right;
+    height: 100%;
+
+    li {
+      display: inline-block;
+      list-style: none;
+      padding: 0 24px;
+      color: #9d9d9d;
+      border-left: 1px solid #E8E8E8;
+      height: 100%;
+      text-align: center;
+
+      &:nth-child(3) {
+        color: rgb(90, 151, 201);
+
+        i {
+          padding-right: 12px;
+        }
+      }
+
+      &:hover {
+        color: rgb(90, 151, 201);
+      }
+    }
+
+    .dolars {
+      font-weight: bold;
+
+      i {
+        padding: 0 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: 860px) {
+  .top-nav ul {
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px){
+  .top-nav ul li {
+    border-left: 0;
+    padding: 0 12px;
+  }
+}

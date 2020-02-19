@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,21 @@
   
 </head>
 <body>
+  <div class="sidebar" id="sidebar">
+    <div class="toggle-btn" id="toggle-btn" onClick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul>
+      <li class="togleLinks"><a href="#"><i class="fas fa-star"></i>General</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-box"></i> Details</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-link"></i> Links</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-book-open"></i> Banners</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-user-alt"></i> Personal data</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-money-bill-wave"></i> Payout</a></li>
+      <li class="togleLinks"><a href="#"><i class="fas fa-undo"></i> Postback</a></li>
+      <li class="closeSidebar" onClick="closeToggleSidebar()"><i class="fas fa-times"></i></li>
+    </ul>
+  </div>
   <section class="left-nav">
     <div class="logo">
       Just do it <i class="fas fa-bars"></i>
@@ -42,16 +57,16 @@
   </section>
   <main>
     <section class="container firstContainer">
-      <h2>General Statistic</h2>
+      <h2>GENERAL STATISTICS</h2>
       <div class="line"></div>
       <div class="dateContainer">
         <div class="smallDateContainer">
           <input type="date">
           <div class="verticalLine"></div>
           <input type="date">
-          <i class="icon-calendar"></i>
+          <i class="far fa-calendar"></i>
         </div>
-        <button class="btn-orange"><i class="icon-refresh"></i></button>
+        <button class="btn-orange"><i class="fas fa-undo"></i></button>
       </div>
       <div class="line"></div>
       <div class="wrapper">
@@ -78,115 +93,128 @@
       </div>
     </section>
 
-    <section class="container">
-      <h2>links</h2>
+    <section class="container secondContainer">
+      <h2>LINKS</h2>
       <div class="line"></div>
-      <button class="btn-orange">+ add new</button>
-      <div class="links">
-        <div class="link">
+      <div class="center">
+        <button class="btn-orange btn-links">+ add new</button>
+      </div>
+      <div class="secondContainerlinks">
+        <div class="secondContainerlink">
           <p>Home page</p>
           <div class="linkContainer">
             <a href="">http://www.homepage.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Currently offer</p>
           <div class="linkContainer">
             <a href="">http://www.currently.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Blurpix</p>
           <div class="linkContainer">
             <a href="">http://www.blurpix.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Your Site</p>
           <div class="linkContainer">
             <a href="">http://www.yoursite.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Duckduckgo</p>
           <div class="linkContainer">
             <a href="">http://www.duckduckgo.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Facebook</p>
           <div class="linkContainer">
             <a href="">http://www.facebook.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Dashboard</p>
           <div class="linkContainer">
             <a href="">http://www.dashboard.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Blurax</p>
           <div class="linkContainer">
             <a href="">http://www.blurax.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Piece of wine</p>
           <div class="linkContainer">
             <a href="">http://www.pieceofwine.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
-        <div class="link">
+        <div class="secondContainerlink">
           <p>Twitter</p>
           <div class="linkContainer">
             <a href="">http://www.twitter.com</a>
           </div>
-          <div class="iContainer">
-            <i class="icon-links"></i>
-            <i class="icon-trash"></i>
+          <div class="icons">
+            <i class="fas fa-link"></i>
+            <i class="fas fa-trash"></i>
           </div>
         </div>
       </div>
-      <button class="btn-orange">+ add new</button>
+      <div class="center">
+        <button class="btn-orange btn-links">+ add new</button>
+      </div>
     </section>
   </main>
+  <script>
+    function toggleSidebar(){
+      document.getElementById("sidebar").classList.toggle('active');
+    }
+    function closeToggleSidebar() {
+      document.getElementById("sidebar").classList.remove('active');
+    }
+  </script>
   <script src="js/script.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </body>
 </html>

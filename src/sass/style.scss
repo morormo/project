@@ -1,14 +1,19 @@
 @import "variables";
 @import "mixins";
-
 @import "normalize";
 @import "layout";
 
 /* Components */
 // @import "components/form_field";
+@import "components/button";
+@import "components/sidebar";
 
 /* Sections */
 // @import "section/registration_form";
+@import "sections/leftNavigation";
+@import "sections/main";
+@import "sections/topNavigation";
+@import "sections/links";
 
 /* Pages / Views */
 // @import "pages/registration";
