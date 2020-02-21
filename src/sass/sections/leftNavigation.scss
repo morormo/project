@@ -69,6 +69,15 @@
     .images { 
       width: 40%;
       float: left;
+      position: relative;
+      
+      .badge {
+        position: absolute;
+        left: 50px;
+        padding: 5px 5px;
+        border-radius: 50%;
+        background: green;
+      }
 
       img {
         width: 40px;

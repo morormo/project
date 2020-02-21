@@ -33,6 +33,10 @@ main {
         margin: 50px auto;
         border: 1px solid #e3e3e3;
         border-radius: 5px;
+
+        .line-date {
+          display: none;
+        }
       }
     }
 
@@ -123,6 +127,14 @@ main {
         flex-direction: column;
         height: 100px;
         width: 80%;
+
+        .line-date {
+          display: block;
+        }
+
+        i {
+          display: none;
+        }
 
         .verticalLine {
           display: none;

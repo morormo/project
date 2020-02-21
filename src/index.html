@@ -12,7 +12,7 @@
 </head>
 <body>
   <div class="sidebar" id="sidebar">
-    <div class="toggle-btn" id="toggle-btn" onClick="toggleSidebar()">
+    <div class="toggle-btn closeSidebar" id="toggle-btn">
       <i class="fas fa-bars"></i>
     </div>
     <ul>
@@ -23,12 +23,12 @@
       <li class="togleLinks"><a href="#"><i class="fas fa-user-alt"></i> Personal data</a></li>
       <li class="togleLinks"><a href="#"><i class="fas fa-money-bill-wave"></i> Payout</a></li>
       <li class="togleLinks"><a href="#"><i class="fas fa-undo"></i> Postback</a></li>
-      <li class="closeSidebar" onClick="closeToggleSidebar()"><i class="fas fa-times"></i></li>
+      <li class="closeSidebar"><i class="fas fa-times"></i></li>
     </ul>
   </div>
   <section class="left-nav">
     <div class="logo">
-      Just do it <i class="fas fa-bars"></i>
+      Just do it
     </div>
     <div class="nav">
       <ul class="nav-links">
@@ -43,14 +43,14 @@
     </div>
     <div class="manager">
       <p>YOUR MANAGER</p>
-      <div class="images"><img src="images/manager.png"></div>
+      <div class="images"><img src="images/manager.png"><span class="badge"></span></div>
       <div class="menthor">Mikhael E.</div>
     </div>
   </section>
   <section class="top-nav">
     <ul class="scn-nav">
       <li class="dolars"><i class="fas fa-wallet"></i>$1,500 00 <i class="fas fa-angle-down"></i></li>
-      <li><i class="far fa-bell"></i></li>
+      <li><i class="far fa-bell"></i><span class="badge"></span></li>
       <li class="user"><i class="far fa-user-circle"></i> Leonardo Dicaprio</li>
       <li><i class="fas fa-sign-out-alt"></i></li>
     </ul>
@@ -63,6 +63,7 @@
         <div class="smallDateContainer">
           <input type="date">
           <div class="verticalLine"></div>
+          <div class="line line-date"></div>
           <input type="date">
           <i class="far fa-calendar"></i>
         </div>
@@ -206,14 +207,6 @@
       </div>
     </section>
   </main>
-  <script>
-    function toggleSidebar(){
-      document.getElementById("sidebar").classList.toggle('active');
-    }
-    function closeToggleSidebar() {
-      document.getElementById("sidebar").classList.remove('active');
-    }
-  </script>
   <script src="js/script.js" type="module"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
 </body>

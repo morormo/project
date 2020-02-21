@@ -8,7 +8,7 @@
   margin: 0;
 
   ul{ 
-    width: 85%;
+    padding: 0 15px 0 0;
     text-align: right;
     height: 100%;
 
@@ -20,6 +20,14 @@
       border-left: 1px solid #E8E8E8;
       height: 100%;
       text-align: center;
+
+      .badge {
+        position: absolute;
+        top: 14px;
+        padding: 5px 5px;
+        border-radius: 50%;
+        background: #f58220;
+      }
 
       &:nth-child(3) {
         color: rgb(90, 151, 201);
@@ -44,15 +52,13 @@
   }
 }
 
-@media (max-width: 860px) {
-  .top-nav ul {
-    text-align: center;
-  }
-}
 
 @media (max-width: 640px){
   .top-nav ul li {
-    border-left: 0;
     padding: 0 12px;
+  }
+
+  .top-nav ul .dolars {
+    display: none;
   }
 }

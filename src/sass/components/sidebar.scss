@@ -2,13 +2,12 @@
   position: fixed;
   width: 100vw;
   height: 100vh;
-  background-color: #191919;
+  background-color: rgba(25, 25, 25, 0.95);
   left: -100vw;
   z-index: 1;
   display: none;
   padding: 0;
   margin: 0;
-  opacity: 0.85;
   
 
   .toggle-btn {
@@ -18,8 +17,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background: #191919;
-    opacity: 0.8;
+    background-color: rgba(25, 25, 25, 0.90);
 
     i {
       color: #a6a6a6;
@@ -37,6 +35,7 @@
     position: absolute;
     font-size: 40px;
     text-align: center;
+    padding: 0;
 
     li {
       list-style: none;

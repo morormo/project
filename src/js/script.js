@@ -3,10 +3,16 @@
 
 /* Canvas */
 
-var ctx = document.getElementById('myChart').getContext('2d');
+const ctx = document.getElementById('myChart').getContext('2d');
+const btns = document.querySelectorAll('.closeSidebar');
 
+for (let btn of btns) {
+  btn.addEventListener('click', function(){
+    document.querySelector('#sidebar').classList.toggle('active');  
+  });
+}
 
-var chart = new Chart(ctx, {
+const chart = new Chart(ctx, {
   type: 'bar',
   data: {
     labels: ['01', '02', '03', '04', '05', '06', '07', '08', '09', '10'],
